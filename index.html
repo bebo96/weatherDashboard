@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+    <header class="hero justify-center flex-row">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main class="flex-column main-container align-center justify-center">
+        <div class="col-12 col-md-4 flex-column justify-space-between align-center">
+            <div class="card search-card">
+                <h3 class="card-header text-uppercase ">Get weather by city</h3>
+                <form id="user-form" class="card-body">
+                    <label class="form-label" for="username"> </label>
+                    <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn" id="button-submit"> Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card weather-info flex-column">
+            <h2 class="city-name"></h2>
+            <div class="weather-card"></div>
+            <div class="forecast-title"></div>
+            <div class="forecast-card"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+</main>
+</body>
+
+</html>
